@@ -1,0 +1,59 @@
+.testimonials {
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-size: 1.2rem;
+    color: $grayish-blue;
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 70px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    .testimony {
+      width: 33%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 1rem;
+      &__img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+
+        background-size: cover;
+        margin-bottom: 50px;
+        &--1 {
+          background-image: url(../assets/image-emily.jpg);
+        }
+        &--2 {
+          background-image: url(../assets/image-thomas.jpg);
+        }
+        &--3 {
+          background-image: url(../assets/image-jennie.jpg);
+        }
+      }
+      &__text {
+        color: $very-dark-grayish-blue;
+        margin-bottom: 50px;
+        line-height: 150%;
+      }
+      &__name {
+        color: $very-dark-desaturated-blue;
+        font-family: "Fraunces", serif;
+        font-size: 1.2rem;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      &__job {
+        color: $grayish-blue;
+      }
+    }
+  }
+}

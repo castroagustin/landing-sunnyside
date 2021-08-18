@@ -1,0 +1,22 @@
+.gallery {
+  width: 100%;
+  display: flex;
+}
+
+.gallery__imgContainer {
+  width: 25%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+
+.gallery__img:hover {
+  transform: scale(1.1);
+}
+/*# sourceMappingURL=gallery.css.map */
