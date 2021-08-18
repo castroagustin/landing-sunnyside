@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1200px) {
+  .textContainer {
+    padding: 0 6%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .nav {
+    &__menu {
+      display: none;
+    }
+    &__bars {
+      display: block;
+    }
+  }
+  .header {
+    min-height: auto;
+    height: 450px;
+    &__text {
+      font-size: 2.5rem;
+      top: 7.5rem;
+      width: 90%;
+    }
+  }
+  .rowContainer--textImg {
+    flex-direction: column;
+  }
+
+  .textImgContainer {
+    width: 100%;
+  }
+  .testimonials {
+    padding: 9rem 2rem 7rem 2rem;
+    &__title {
+      text-align: center;
+    }
+    &__container {
+      flex-direction: column;
+      text-align: center;
+      .testimony {
+        width: 100%;
+        margin-bottom: 4rem;
+        &__img,
+        &__text {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    &__imgContainer {
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  .nav {
+    &__logo {
+      height: 1.3rem;
+    }
+  }
+  .rowContainer {
+    flex-direction: column;
+    &--colRev {
+      flex-direction: column-reverse;
+    }
+  }
+  .header {
+    padding: 3rem 5%;
+    &__text {
+      font-size: 2rem;
+      top: 7.5rem;
+      width: 90%;
+    }
+  }
+  .textContainer,
+  .imgContainer {
+    width: 100%;
+  }
+  .imgContainer {
+    height: auto;
+    max-height: 400px;
+  }
+  .textContainer {
+    padding: 20% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__title {
+      font-size: 2rem;
+    }
+  }
+  .textImgContainer {
+    &__textContainer {
+      width: 90%;
+      top: 300px;
+    }
+    &__imgContainer {
+      height: 500px;
+    }
+  }
+  .gallery__imgContainer {
+    height: auto;
+  }
+  .footer__nav {
+    width: 80%;
+    justify-content: space-around;
+    a {
+      margin: auto;
+    }
+  }
+}
